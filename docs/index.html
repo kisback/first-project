@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Számológép</title>
     <link rel="stylesheet" href="calc.css">
+
 </head>
 <body>
     <h1>Számológép</h1>
@@ -11,10 +12,17 @@
     <p>Ez egy számológép</p>
 
     <form>
-        <input name="a"> +
-        <input name="b"><br>
-        <input type="submit">
-    </form>
+        <div>
+            <input name="a" id="a-input"> +
+            <input name="b" id="b-input">
+            <input type="submit" value="Számolj" id="submit-button">
+        </div>
 
+        <div>
+            Result:
+            <input id="result-input" name=result readonly="true">
+        </div>
+    </form>
+    <script src="calc.js"></script>
 </body>
 </html>
